@@ -1,0 +1,11 @@
+<br>
+<%= form_for @user do  |f| %>
+    <%= f.label :name %> <br>
+    <%= f.text_field :name %> <br>
+
+    <%= f.label :age %> <br>
+    <%= f.text_field :age %> <br>
+
+    <%= f.submit %> <!-- Name für Button automatisch -->
+    
+<% end %>

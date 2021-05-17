@@ -1,0 +1,11 @@
+<br>
+<%= link_to "Add User", new_user_path%>
+
+<%  @users.each do |user| %>
+    <p>
+        Name: <%= link_to user.name, user_path(user) %> <br>
+        Age: <%= user.age %> | <%= link_to  "Edit", 
+            edit_user_path(user) %> | <%= link_to "Delete",
+            user, method: :delete %>
+    </p>
+<% end %>
